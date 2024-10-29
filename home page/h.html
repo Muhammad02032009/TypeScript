@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./c.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h1>Product list</h1>
+    <div  class="Filters">
+        <input type="search" class="SearchInp" placeholder="Search...">
+        <div>
+            <select name="" id="" class="sortBy">
+                <option value="id">ID</option>
+                <option value="name">Name</option>
+                <option value="price">Price</option>
+                <option value="category">Category</option>
+            </select>
+            <button class="AddBtn"> + Add Product</button>
+            <button class="DeleteCheckBtn">Delete</button>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <th><input type="checkbox"></th>
+            <th>#</th>
+            <th>Product Deteil</th>
+            <th>Categories</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
